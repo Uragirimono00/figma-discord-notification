@@ -16,7 +16,7 @@ public class FigmaNotificationScheduler {
     private String fileId;
 
     // 주기적으로 실행할 메서드를 설정합니다.
-    @Scheduled(fixedRate = 10000) // 1분마다 실행
+    @Scheduled(fixedRate = 5000) // 1분마다 실행
     public void checkFigmaUpdates() {
         // Figma API를 호출하여 현재 파일 상태를 가져옵니다.
         FigmaFile currentFileState = figmaUtils.getFile(fileId);

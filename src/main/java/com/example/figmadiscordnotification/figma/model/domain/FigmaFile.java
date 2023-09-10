@@ -3,12 +3,14 @@ package com.example.figmadiscordnotification.figma.model.domain;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import java.util.List;
 import java.util.Map;
 
 @Getter
 @Setter
+@ToString
 public class FigmaFile {
     private String name;
     private String role;
@@ -23,10 +25,6 @@ public class FigmaFile {
     private Map<String, Style> styles;
     private String mainFileKey;
     private List<Branch> branches;
-
-    public static class Node {
-        // Node에 대한 필드 정의
-    }
 
     public static class Component {
         // Component에 대한 필드 정의
